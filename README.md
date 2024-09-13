@@ -12,7 +12,8 @@
 |![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/finaldie/skull.svg)[](https://github.com/frankyhub/NeoPixel-Pumpkin/pulls)|[<img src="https://img.shields.io/github/license/finaldie/skull.svg">](https://github.com/frankyhub/NeoPixel-Pumpkin/blob/main/LICENSE.md)| ![GitHub User's stars](https://img.shields.io/github/stars/frankyhub)|
 </div>
 
-
 ---
+
+![Bild](pic/Schaltung.png)
 
 

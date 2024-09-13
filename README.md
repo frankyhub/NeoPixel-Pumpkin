@@ -1,7 +1,7 @@
 
 # NeoPixel-Pumpkin
 
-## NANO und NeoPixel-Ring mit 12 LEDs 
+## NANO/UNO und NeoPixel-Ring mit 12 LEDs 
 
 <div align="center">
 

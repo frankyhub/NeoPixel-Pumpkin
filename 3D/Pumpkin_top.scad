@@ -6,8 +6,11 @@ Objekt Info: Pumpkin top
 Version: 13.09.2024
 *******************************************
 */
+ //******* Parameter ********************
 
+n="Oberlab"; //Name
 
+//************************************** 
 //***************   Libraries  ************
 
 use <scad-utils/transformations.scad>
@@ -34,23 +37,7 @@ module one_leaf_part() {
     }
 }
 
-/*
-module pumpkin_leaf() {
-    translate ([0,19,0]) intersection () {
-        // Three leaf parts...
-        translate ([0,-5,0]) rotate ([90,0,0]) union () {
-            scale ([1.5,1.2,1]) one_leaf_part();
-            translate ([6,3,0]) rotate ([0,0,45]) one_leaf_part();
-            translate ([-6,3,0]) rotate ([0,0,-45]) one_leaf_part();
-        }
-        // Intersect with a hollow sphere to cut out a pumpkin leaf.
-        difference () {
-            sphere(20);
-            sphere(18);
-        }
-    }
-}
-*/
+
 module pumpkin_stem() {
     pathstep = 1;
     height = 100;
@@ -76,10 +63,6 @@ module pumpkin() {
     union () {
         pumpkin_body();
         translate ([0,0,10]) scale ([0.5,0.5,0.5]) pumpkin_stem();
-        // Do not add the leaf here as it will be cut by the cone
-        // later. Rather add it after intersecting with the cone.
-        // translate ([-3,-8,26]) rotate ([-75,0,-45])
-        //     pumpkin_leaf();
     }
 }
 
@@ -112,8 +95,6 @@ module pumpkin_bottom_part() {
     intersection () {
         difference () {
             pumpkin();
-            // Remove a smaller version from the inside so we use less
-            // material.
             scale ([0.75,0.75,0.7]) pumpkin_body();
         }
         bottom_inverse_cone();
@@ -125,13 +106,17 @@ pumpkin_top_part();
 
 difference() {
    pumpkin_bottom_part();
-//translate(v = [-40, -40, 15])
-// cube([80,80,30]);
-
-translate(v = [-40, -40, -45])
- cube([80,80,60]);
-
+   translate(v = [-40, -40, -45])
+   cube([80,80,60]);
 }
+
+difference() {
 translate(v = [0, 0, 15])
-cylinder (h = 3, r=24, center = true, $fn=100);
+    cylinder (h = 3, r=24, center = true, $fn=100);
+    color("SlateGray")
+    rotate([0, 180, 0])
+    translate([-15, -4,-15])
+    linear_extrude(2)
+    text(n,  font = "Arial", size = 6);
+}
 

@@ -36,13 +36,13 @@ module one_leaf_part() {
 
 module pumpkin_leaf() {
     translate ([0,19,0]) intersection () {
-        // Three leaf parts...
+        // Drei Blattteile...
         translate ([0,-5,0]) rotate ([90,0,0]) union () {
             scale ([1.5,1.2,1]) one_leaf_part();
             translate ([6,3,0]) rotate ([0,0,45]) one_leaf_part();
             translate ([-6,3,0]) rotate ([0,0,-45]) one_leaf_part();
         }
-        // Intersect with a hollow sphere to cut out a pumpkin leaf.
+        // Mit einer Hohlkugel schneiden, um ein Kürbisblatt auszuschneiden.
         difference () {
             sphere(20);
             sphere(18);
@@ -75,10 +75,6 @@ module pumpkin() {
     union () {
         pumpkin_body();
         translate ([0,0,10]) scale ([0.5,0.5,0.5]) pumpkin_stem();
-        // Do not add the leaf here as it will be cut by the cone
-        // later. Rather add it after intersecting with the cone.
-        // translate ([-3,-8,26]) rotate ([-75,0,-45])
-        //     pumpkin_leaf();
     }
 }
 
@@ -95,8 +91,6 @@ module bottom_inverse_cone() {
     }
 }
 
-
-
 module pumpkin_top_part() {
     union () {
         intersection () {
@@ -111,8 +105,6 @@ module pumpkin_bottom_part() {
     intersection () {
         difference () {
             pumpkin();
-            // Remove a smaller version from the inside so we use less
-            // material.
             scale ([0.75,0.75,0.7]) pumpkin_body();
         }
         bottom_inverse_cone();
@@ -142,14 +134,13 @@ cylinder (h = 20, r=25, center = true, $fn=100);
    rotate(a = [90, -30, 30])  
    cylinder (h = 50, r=7, $fn=3); 
 
-  translate(v = [-27, 35, -10]) //USB
-  rotate(a = [90, 0, 20])   
-  cube(size = [11,8.4,20]); 
+  translate(v = [-43, 35, -10]) //USB
+  rotate(a = [90, 0, 45])   
+  cube(size = [6,4,30]);  
   
     }
   
-    
-  
+
  
     
     

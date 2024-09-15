@@ -23,7 +23,7 @@ module pumpkin_body() {
     union () {
         for (angle = [0:40:360])
             rotate ([0,0,angle]) translate ([-16,0,0]) 
-                sphere(20, $fn=50);
+                sphere(20, $fn=100);
     }
 }
 

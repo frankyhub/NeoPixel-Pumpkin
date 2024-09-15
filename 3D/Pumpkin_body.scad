@@ -6,7 +6,10 @@ Objekt Info: Pumpkin body
 Version: 13.09.2024
 *******************************************
 */
+//***************   Parameter  ************
 
+frag=85; //Fragmente
+ws=0.95; //Wandstaerke
 
 //***************   Libraries  ************
 
@@ -23,7 +26,7 @@ module pumpkin_body() {
     union () {
         for (angle = [0:40:360])
             rotate ([0,0,angle]) translate ([-16,0,0]) 
-                sphere(20, $fn=100);
+                sphere(20, $fn=frag);
     }
 }
 
@@ -36,13 +39,13 @@ module one_leaf_part() {
 
 module pumpkin_leaf() {
     translate ([0,19,0]) intersection () {
-        // Drei Blattteile...
+       
         translate ([0,-5,0]) rotate ([90,0,0]) union () {
             scale ([1.5,1.2,1]) one_leaf_part();
             translate ([6,3,0]) rotate ([0,0,45]) one_leaf_part();
             translate ([-6,3,0]) rotate ([0,0,-45]) one_leaf_part();
         }
-        // Mit einer Hohlkugel schneiden, um ein Kürbisblatt auszuschneiden.
+        
         difference () {
             sphere(20);
             sphere(18);
@@ -79,7 +82,6 @@ module pumpkin() {
 }
 
 
-
 module top_cone() {
     translate ([0,0,5]) cylinder(150,0,100);
 }
@@ -105,14 +107,13 @@ module pumpkin_bottom_part() {
     intersection () {
         difference () {
             pumpkin();
-            scale ([0.75,0.75,0.7]) pumpkin_body();
+            // Wandstaerke
+            scale ([ws,ws,ws]) pumpkin_body();
         }
         bottom_inverse_cone();
     }
 }
 
-
-//pumpkin_top_part();
 
 difference() {
     pumpkin_bottom_part();
@@ -134,13 +135,13 @@ cylinder (h = 20, r=25, center = true, $fn=100);
    rotate(a = [90, -30, 30])  
    cylinder (h = 50, r=7, $fn=3); 
 
-  translate(v = [-43, 35, -10]) //USB
+   translate(v = [-43, 35, -10]) //USB
   rotate(a = [90, 0, 45])   
   cube(size = [6,4,30]);  
   
     }
   
-
+ 
  
     
     

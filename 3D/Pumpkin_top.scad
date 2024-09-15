@@ -9,6 +9,8 @@ Version: 13.09.2024
  //******* Parameter ********************
 
 n="Oberlab"; //Name
+frag=85; //Fragmente
+ws=0.95; //Wandstaerke
 
 //************************************** 
 //***************   Libraries  ************
@@ -19,14 +21,11 @@ use <sweep.scad>
 
 //*****************************************
 
-
-
-
 module pumpkin_body() {
     union () {
         for (angle = [0:40:360])
             rotate ([0,0,angle]) translate ([-16,0,0]) 
-                sphere(20, $fn=50);
+                sphere(20, $fn=frag);
     }
 }
 
@@ -66,8 +65,6 @@ module pumpkin() {
     }
 }
 
-
-
 module top_cone() {
     translate ([0,0,5]) cylinder(0,0,100);
 }
@@ -78,8 +75,6 @@ module bottom_inverse_cone() {
         top_cone();
     }
 }
-
-
 
 module pumpkin_top_part() {
     union () {
@@ -95,12 +90,11 @@ module pumpkin_bottom_part() {
     intersection () {
         difference () {
             pumpkin();
-            scale ([0.75,0.75,0.7]) pumpkin_body();
+            scale ([ws,ws,ws]) pumpkin_body();
         }
         bottom_inverse_cone();
     }
 }
-
 
 pumpkin_top_part();
 
@@ -110,13 +104,14 @@ difference() {
    cube([80,80,60]);
 }
 
+/*
 difference() {
 translate(v = [0, 0, 15])
-    cylinder (h = 3, r=24, center = true, $fn=100);
+    cylinder (h = 3, r=27, center = true, $fn=100);
     color("SlateGray")
     rotate([0, 180, 0])
     translate([-15, -4,-15])
     linear_extrude(2)
     text(n,  font = "Arial", size = 6);
 }
-
+*/

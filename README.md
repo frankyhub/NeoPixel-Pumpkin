@@ -16,6 +16,8 @@
 
 ![Bild](pic/Schaltung.png)
 
+![Bild](pic/pumpkin.png)
+
 ![Bild](pic/pumpkin_body.png)
 
 ![Bild](pic/pumpkin_usb.png)

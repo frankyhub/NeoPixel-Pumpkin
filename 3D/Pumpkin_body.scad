@@ -122,15 +122,25 @@ translate(v = [-40, -40, 15])
 
 translate(v = [0, 0, 10])
 cylinder (h = 20, r=25, center = true, $fn=100);
-    
-   translate(v = [0, 0, 5]) //Augen
+ /*   
+   translate(v = [0, 0, 5]) //rundes Auge rechts
    rotate(a = [30, 90, 0])  
    cylinder (h = 50, r=5, $fn=100);   
 
-   translate(v = [0, 0, 5]) 
+   translate(v = [0, 0, 5]) //rundes Auge links
    rotate(a = [90, 20, 0])  
    cylinder (h = 50, r=5, $fn=100);
-    
+ */   
+  translate(v = [9, 0, 5]) //Auge rechts
+  rotate(a = [90, -40, 50])  
+  cylinder (h = 50, r=5, $fn=5);   
+  translate(v = [-3, 0, 7])
+  rotate(a = [90, 40, 0])
+  cube(size = [11,4,50]);
+  
+  rotate(a = [90, -40, 0])
+ cube(size = [10,4,50]);
+ 
    translate(v = [0, 0, 0]) //Nase
    rotate(a = [90, -30, 30])  
    cylinder (h = 50, r=7, $fn=3); 
@@ -140,8 +150,8 @@ cylinder (h = 20, r=25, center = true, $fn=100);
   cube(size = [6,4,30]);  
   
     }
-  
- 
- 
     
+
+ 
+   
     

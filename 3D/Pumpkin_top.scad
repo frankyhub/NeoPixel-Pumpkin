@@ -103,7 +103,8 @@ difference() {
    translate(v = [-40, -40, -45])
    cube([80,80,60]);
 }
-
+ translate([-123, -108, -3])
+ import("Stamm.stl", convexity=3);
 /*
 difference() {
 translate(v = [0, 0, 15])

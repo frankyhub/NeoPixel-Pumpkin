@@ -20,7 +20,7 @@
 
 ![Bild](pic/pumpkin_body.png)
 
-![Bild](pic/pumpkin_usb.png)
+
 
 ![Bild](pic/pumpkin_top.png)
 

@@ -5,7 +5,7 @@
 
 <div align="center">
   
-![GitHub Created At](https://img.shields.io/github/created-at/frankyhub/NeoPixel-Pumpkin)
+![Static Badge](https://img.shields.io/badge/RepoNr.:-%2010-blue) ![GitHub Created At](https://img.shields.io/github/created-at/frankyhub/NeoPixel-Pumpkin)
 
 
   |[:skull:ISSUE](https://github.com/frankyhub/NeoPixel-Pumpkin/issues?q=is%3Aissue)|[:speech_balloon: Forum /Discussion](https://github.com/frankyhub/NeoPixel-Pumpkin/discussions)|[:grey_question:WiKi](https://github.com/frankyhub/NeoPixel-Pumpkin/wiki)|
@@ -16,14 +16,13 @@
 </div>
 
 
-![Static Badge](https://img.shields.io/badge/RepoNr.:-%2010-blue)
 
 
 
 
 
 
-![Static Badge](https://img.shields.io/badge/https://img.shields.io/badge/RepoNr.10-blue)
+
 
 
 

@@ -12,7 +12,8 @@
 | <a href="https://github.com/frankyhub/NeoPixel-Pumpkin/pulse" alt="Activity"><img src="https://img.shields.io/github/commit-activity/m/badges/shields" />| <a href="https://github.com/frankyhub/NeoPixel-Pumpkin/graphs/traffic"><img alt="ViewCount" src="https://views.whatilearened.today/views/github/frankyhub/github-clone-count-badge.svg">  |<a href="https://github.com/frankyhub?tab=stars"> ![GitHub User's stars](https://img.shields.io/github/stars/frankyhub)|
 </div>
 
-![AppVeyor Build](https://img.shields.io/appveyor/build/frankyhub/NeoPixel-Pumpkin)
+
+https://img.shields.io/badge/:any_text-you_like-blue
 
 
 

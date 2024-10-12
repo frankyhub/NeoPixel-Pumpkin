@@ -13,8 +13,7 @@
 </div>
 
 
-[![Spell Check (Arduino)](https://github.com/frankyhub/AutomationShield/actions/workflows/spell-check-arduino.yml/badge.svg)](https://github.com/frankyhub/NeoPixel-Pumpkin/wiki)
-
+[![Spell Check (Arduino)](https://github.com/gergelytakacs/AutomationShield/actions/workflows/spell-check-arduino.yml/badge.svg)](https://github.com/gergelytakacs/AutomationShield/actions/workflows/spell-check-arduino.yml)
 
 ---
 

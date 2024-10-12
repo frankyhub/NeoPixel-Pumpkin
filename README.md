@@ -13,6 +13,7 @@
 </div>
 
  https://img.shields.io/badge/Rep-Nr-10-blue
+![Static Badge](https://img.shields.io/badge/:badgeContent)
 
 
 

@@ -16,7 +16,7 @@
 </div>
 
 
-![Static Badge](https://img.shields.io/badge/https://img.shields.io/badge/any_text-you_like-blue)
+![Static Badge](https://img.shields.io/badge/https://img.shields.io/badge/any_text-%2010-blue)
 
 
 ![Static Badge](https://img.shields.io/badge/https://img.shields.io/badge/RepoNr.10-blue)

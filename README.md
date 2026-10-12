@@ -11,12 +11,7 @@
 </div>
 
 
-## NeoPixel-Pumpkin mit einem NANO/UNO und NeoPixel-Ring mit 12 LEDs 
-
----
-
-<img src="pic/Schaltung.png" width="500"> 
-<br> <br>
+### NeoPixel-Pumpkin mit einem NANO/UNO und NeoPixel-Ring mit 12 LEDs 
 
 <img src="pic/pumpkin.png" width="500"> 
 <br> <br>
@@ -26,6 +21,11 @@
 
 <img src="pic/pumpkin_top.png" width="500"> 
 <br> <br>
+
+
+<img src="pic/Schaltung.png" width="500"> 
+<br> <br>
+
 
 ---
 
